@@ -6,6 +6,11 @@ fn print_menu() {
     println!("5. Quit");
 }
 
+fn can_afford(gold: u64, cost: u64) -> bool {
+    gold >= cost
+}
+
 fn main() {
     print_menu();
 }
+

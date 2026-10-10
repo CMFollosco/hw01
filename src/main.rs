@@ -1,4 +1,7 @@
 use std::io;
+use rand::rngs::StdRng;
+use rand::{Rng, SeedableRng};
+
 
 fn print_menu() {
     println!("1. Buy food");
@@ -45,10 +48,11 @@ fn read_number(min: u64, max: u64) -> u64 {
     }
 }
 
-fn main() {
-    println!("Enter a number from 1 to 10:");
-    let number = read_number(1, 10);
-
-    println!("You entered {}", number);
+fn roll_die(seed: u64) -> u64 {
+    let mut rng = StdRng::seed_from_u64(seed);
+    rng.random_range(1..=6)
 }
 
+fn main() {
+    println!("{}", roll_die(1));
+}

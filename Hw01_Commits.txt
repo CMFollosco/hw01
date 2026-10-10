@@ -1,0 +1,29 @@
+feat: main
+finally added the game loop, and implemented the rest; menu choices actually process and do something with input, resources are updated each input, and player can quit game
+
+feat: print_status
+made the print message display the amount for each category which are gold, food, and the day the user is on
+
+feat: roll_many
+it can now roll multiple dice and return the sum of each die roll
+
+feat: roll_die
+made the rng and returns a repeatable number from any side of a die
+
+feat: read_number
+Code can now read user input until the user enters a valid answer (1-10), anything else will make the code continue asking
+
+feat: hunt_food
+hunt_food will return the amount of food obtained from a roll based on the table given
+
+feat: can_afford
+Made it so when the player has enough gold to pay the asking cost, it'll return true, otherwise it's false
+
+feat: print_menu
+Printed the five menu options for user As of now, it does nothing but display text
+
+chore: cargo init scaffold
+
+docs: flowchart designs created
+
+*Commits start from bottom to up because in the powershell I didn't write the titles properly

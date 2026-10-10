@@ -1,3 +1,11 @@
+fn print_menu() {
+    println!("1. Buy food");
+    println!("2. Hunt");
+    println!("3. Trade with caravan");
+    println!("4. View status");
+    println!("5. Quit");
+}
+
 fn main() {
-    println!("Hello, world!");
+    print_menu();
 }
